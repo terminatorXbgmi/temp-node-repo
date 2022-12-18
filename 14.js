@@ -9,6 +9,6 @@ name.prototype.print = function(){
 var palyer1 = new name("gautam");
 
 palyer1.print();
-
+console.log("hello");
 
 
