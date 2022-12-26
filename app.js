@@ -1,6 +1,15 @@
- const _ = require('lodash');
+const EventEmitter  = require('events');
 
- const items = [1 , [2 , [3,[5]]]]
+const customEmitter = new EventEmitter();
 
- const newitems = _.flattenDeep(items);
- console.log(newitems);
+customEmitter.on('response' , (name , id) =>{  // here response is a string we desire to pass
+  console.log(`data recievd ${name} with id: ${id}`)
+})
+
+customEmitter.on('response' , () =>{  // here response is a string we desire to pass
+  console.log(`some other logic here`)
+})
+
+
+customEmitter.emit('response' , 'jhon' ,34)
+// here string should match

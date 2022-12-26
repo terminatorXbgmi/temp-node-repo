@@ -8,10 +8,10 @@
 //      console.log('hello there ' + name )
 // }
 
-const names = require('./2-module')
-const sayhi  = require('./5')
-const data = require('./6-alternative-flavour')
-require('./7-mind-gernade')
+// const names = require('./2-module')
+// const sayhi  = require('./5')
+// const data = require('./6-alternative-flavour')
+// require('./7-mind-gernade')
 //  sayhi(names.jhon)
 //  sayhi(names.peter)
 // sayhi('shasi')
